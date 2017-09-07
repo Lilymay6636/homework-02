@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Homework07-jQuery練習02</title>
+    <script src="https://code.jquery.com/jquery-1.6.4.js"></script>
+    <link rel="stylesheet" href="css/hw07-2.css">
+
+</head>
+<body>
+
+<div id="password">
+	密碼：<input type="password"  autocomplete="off" />
+	<p>密碼強度：<span class="tips" level="0"></span><span class="tips" level="1"></span><span class="tips" level="2"></span><span class="tips" level="3"></span></p>
+</div>
+
+<script>
+    $().ready(function(){
+  var tipColor=['red','orange','gold','green'];
+  
+  function matchLevel(password){
+    if(password.length===0){
+        return -1;
+    }
+	else if(password.length>=1&&password.length<6){
+		return 0;
+	}
+	else if(password.length>=6&&password.length<10){
+		return 1;
+	}
+	else if(password.length>=10&&password.length<16){
+		return 2;
+	}
+	else{
+		return 3;
+	}
+  }
+
+  $("#password>input").keyup(function(){
+  
+    var pass = $(this).val();
+    var level = matchLevel(pass);
+    if(level>=0){
+      $(".tips[level='0']").css("background", tipColor[0]);
+    }
+    else{
+      $(".tips[level='0']").css("background", "");
+    }
+    if(level>=1){
+      $(".tips[level='1']").css("background", tipColor[1]);
+    }
+    else{
+      $(".tips[level='1']").css("background", "");
+    }
+    if(level>=2){
+      $(".tips[level='2']").css("background", tipColor[2]);
+    }
+    else{
+      $(".tips[level='2']").css("background", "");
+    }
+    if(level>=3){
+      $(".tips[level='3']").css("background", tipColor[3]);
+    }
+    else{
+      $(".tips[level='3']").css("background", "");
+    }
+      
+  });
+
+
+});
+    </script>
+</body>
+</html>

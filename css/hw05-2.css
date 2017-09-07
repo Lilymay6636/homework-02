@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: skyblue;
+}
+
+P {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+}
+
+@media (max-width: 767px) {
+    body {
+        background-color: orange;
+    }
+    P {
+        color: white;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-color: orangered;
+    }
+    P {
+        color: white;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    body {
+        background-color: gold;
+    }
+    P {
+        color: black;
+    }
+}
+
+@media (min-width: 980px) {
+    body {
+        background-color: limegreen;
+    }
+    P {
+        color: white;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-color: deepskyblue;
+    }
+    P {
+        color: white;
+    }
+}

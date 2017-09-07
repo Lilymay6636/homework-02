@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework07-jQuery練習01</title>
+
+    <script src="https://code.jquery.com/jquery-1.6.4.js"></script>
+    <link rel="stylesheet" href="css/hw07.css">
+
+</head>
+
+<body>
+
+
+    <div class="playground">
+        <input type="text"></input>
+        <div class="hint">This is a tooltip!</div>
+    </div>
+
+    <script>
+        $().ready(function() {
+
+            $("input").mouseover(function() {
+                $(".hint").css("display", "block");
+            });
+
+            $("input").mouseout(function() {
+                $(".hint").css("display", "none");
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

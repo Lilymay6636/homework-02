@@ -1,0 +1,68 @@
+body {
+    background-image: url(images/hw-texture.png);
+    text-align: center;
+    
+}
+
+.content {
+    width: 540px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.35);
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    font-family: Microsoft JhengHei, sans-serif, Arial;
+    margin: 10% auto;
+    padding-bottom: 25px;
+    
+}
+
+.item {
+    float: none;
+    margin: 10px;
+}
+
+.layout {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    margin: 0px 10px;
+}
+
+a:link {
+    color: #6a3906;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:active {
+    color: darkred;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0px;
+    color: black;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0px auto 15px;
+    color: #6a3906;
+}
+
+.line {
+    width: 400px;
+    height: 0px;
+    border-top: 2px dotted black;
+    margin: 0px auto 15px;
+}
